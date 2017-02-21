@@ -82,5 +82,15 @@
             element.addClass('lazy-loaded');
         }
     });
+    var v1Src = $("#v1")[0].src;
+    var v2Src = $("#v2")[0].src;
+    $('#play-v1').on('click', function(ev) {
+        document.getElementById('v2').contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        document.getElementById('v1').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+    });
+    $('#play-v2').on('click', function(ev) {
+        document.getElementById('v1').contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        document.getElementById('v2').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+    });
 
 })(jQuery); // End of use strict
