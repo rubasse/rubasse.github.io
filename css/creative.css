@@ -64,6 +64,10 @@ p {
   color: #FFF;
 }
 
+.text-black {
+  color: #000;
+}
+
 .block-title {
   font-size: 22px;
 }
@@ -435,9 +439,8 @@ header .header-content .header-content-inner p {
   margin-right: 0px;
 }
 .btn-default {
-  color: #222222;
-  background-color: white;
-  border-color: white;
+  color: #FFF;
+  background-color: #BD2B26;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -448,15 +451,26 @@ header .header-content .header-content-inner p {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #222222;
-  background-color: #f47b45;
-  border-color: #ededed;
+  color: #FFF;
+  background-color: #FF7D3F;
 }
+
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   background-image: none;
 }
+
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover {
+  background-color: #FF7D3F;
+  color: #FFF;
+}
+
 .btn-default.disabled,
 .btn-default[disabled],
 fieldset[disabled] .btn-default,
@@ -533,13 +547,17 @@ fieldset[disabled] .btn-primary.active {
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
   border: none;
-  border-radius: 300px;
-  font-weight: 700;
-  text-transform: uppercase;
+  border-radius: 0px;
+  font-size: 20px;
+  letter-spacing: 5px;
 }
 .btn-xl {
   padding: 15px 30px;
 }
+.btn-default:first-child {
+  margin-right: 10%;
+}
+
 ::-moz-selection {
   color: white;
   text-shadow: none;
@@ -607,13 +625,13 @@ body {
 
 .specs-hr {
   border-width: 3px;
-  margin: 0px auto 0px 25%;
+  margin: 0px auto 0px 30%;
   max-width: 120px;
 }
 
 .table {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-size: 16px;
 }
 
@@ -628,4 +646,67 @@ body {
 .table>tbody>tr>th, .table>tbody>tr>td {
   border-top: 0px;
   padding: 2px;
+}
+.review-text {
+  font-size: 18px;
+}
+.review-container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background: none;
+}
+
+.review-control {
+  font-size: 25px;
+  color: #FFF;
+  text-align: center;
+}
+
+.item {
+  height: 150px;
+}
+
+.carousel-inner{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.review-img {
+  width: 100%
+}
+
+.vertical-center2 {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.review-text-container {
+  padding-left: 50px;
+}
+
+.contact-title{
+  font-size: 35px;
+  color: #BD2B26;
+  letter-spacing: 15px;
+  margin: 25px auto 10px 10%;
+}
+
+.contact-hr {
+  border-width: 5px;
+  margin: 0px auto 0px 12%;
+  max-width: 180px;
+}
+
+.btn-image{
+  margin-right: 15px;
+}
+
+.contact-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
