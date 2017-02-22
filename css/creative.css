@@ -584,9 +584,6 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl {
   padding: 15px 30px;
 }
-.btn-default:first-child {
-  margin-right: 10%;
-}
 
 ::-moz-selection {
   color: white;
@@ -732,11 +729,36 @@ body {
   max-width: 180px;
 }
 
-.btn-image{
-  margin-right: 15px;
-}
-
 .contact-container {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .btn-image {
+    -moz-transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+    transform:scale(0.5);
+  }
+  .btn-xl {
+    padding: 0px 10px 0px 0px;
+  }
+  .btn-default:first-child {
+    margin-bottom: 10px;
+  }
+  .md-video {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .xs-video {
+    display: none;
+  }
+  .btn-image{
+    margin-right: 15px;
+  }
+  .btn-default:first-child {
+    margin-right: 10%;
+  }
 }
