@@ -93,7 +93,6 @@ aside {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  margin: 0px 20px 0px 20px;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #BD2B26;
@@ -126,7 +125,6 @@ aside {
 .navbar-toggle {
   background-color: white;
   margin: 0px;
-  padding: 12.5px 30px;
 }
 
 .navbar-default .nav > li > a,
@@ -165,6 +163,9 @@ aside {
 }
 
 @media (min-width: 768px) {
+  .navbar-default {
+    margin: 0px 20px 0px 20px;
+  }
 
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -735,6 +736,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-color: #FFF;
+    padding: 0px;
+  }
   .btn-image {
     -moz-transform:scale(0.5);
     -webkit-transform:scale(0.5);
@@ -748,6 +753,19 @@ body {
   }
   .md-video {
     display: none;
+  }
+  .portfolio-caption {
+    font-size: 12px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 12px;
+  }
+
+  .portfolio-box:hover .portfolio-box-caption {
+    opacity: 0;
+  }
+  .portfolio-box.selected .portfolio-box-caption {
+    opacity: 0;
   }
 }
 
