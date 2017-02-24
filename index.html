@@ -157,8 +157,8 @@
         <div class="container-fluid no-padding">
             <div class="row no-gutter no-margin">
                 <div class="col-xs-12 xs-video">
-                    <iframe id="v1" class="right-video" src="https://www.youtube.com/embed/nsjmsBGpxkU?rel=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-                    <iframe id="v2" class="right-video" src="https://www.youtube.com/embed/fDF8C6AGbok?rel=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/nsjmsBGpxkU?rel=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/fDF8C6AGbok?rel=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
                 </div>
             <div class="row no-gutter no-margin md-video">
                 <div class="col-xs-12 col-md-4 video-left">
@@ -193,7 +193,6 @@
                 </div>
             </div>
         </div>
-            </div>
         </div>
     </section>
     <section class="no-padding">
@@ -301,14 +300,14 @@
     </section>
     <section class="bg-white" id="specs">
         <div class="container-fluid no-padding">
-            <div class="row text-center no-margin">
+            <div class="row text-center no-margin specs-row">
                 <div class="col-xs-12 col-md-3">
                     <h3 class="specs-title">
                         技術規格
                     </h3>
                     <hr class="specs-hr">
                 </div>
-                <div class="col-xs-12 col-md-3 specs-container">
+                <div class="col-xs-10 col-xs-offset-2 col-md-offset-0 col-md-3 specs-container">
                     <table class="table table-sm">
                         <tbody>
                             <tr>
@@ -334,7 +333,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-xs-12 col-md-4 specs-container">
+                <div class="col-xs-10 col-xs-offset-2 col-md-offset-0 col-md-4 specs-container">
                     <table class="table table-sm">
                         <tbody>
                             <tr>
@@ -370,16 +369,19 @@
     <section id="reviews">
         <div class="container-fluid review-container carousel slide" data-ride="carousel" id="review-section">
             <div class="row vertical-center">
+            <div class="col-xs-1 col-md-1 no-padding text-center">
                 <a class="review-control" href="#review-section" role="button" data-slide="prev">
                     <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
                     <span class="sr-only">Previous</span>
                 </a>
+            </div>
+            <div class="col-xs-10 col-md-10">
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <div class="col-xs-2 col-md-2 vertical-center2">
+                        <div class="col-xs-4 col-xs-offset-4 col-sm-offset-0 col-sm-2 vertical-center2">
                             <img class="review-img img-circle" src="img/profile-icon.png">
                         </div>
-                        <div class="col-xs-10 col-md-10 review-text-container vertical-center2">
+                        <div class="col-xs-12 col-sm-10 no-padding review-text-container vertical-center2">
                             <h3 class="text-white">“盧貝思的烘豆機讓我每月省下大筆花費！”</h3>
                             <p class="text-black review-text">
                                 不再需要花數個小時看顧機器，烘出的豆子品質十分穩定，最方便的是懶人一鍵重現功能！
@@ -387,10 +389,10 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="col-xs-2 col-md-2 vertical-center2">
+                        <div class="col-xs-4 col-xs-offset-4 col-sm-offset-0 col-sm-2 vertical-center2">
                             <img class="review-img img-circle" src="img/profile-icon.png">
                         </div>
-                        <div class="col-xs-10 col-md-10 review-text-container vertical-center2">
+                        <div class="col-xs-12 col-sm-10 no-padding review-text-container vertical-center2">
                             <h3 class="text-white">“想要的功能全部一次實現”</h3>
                             <p class="text-black review-text">
                                 第一次遇到烘豆這麼有效率的機器，省時省力，各種風力火力都可以隨便調整。
@@ -398,16 +400,19 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-xs-1 col-md-1 no-padding text-center">
                 <a class="review-control" href="#review-section" role="button" data-slide="next">
                     <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            </div>
         </div>
     </section>
     <section class="bg-white" id="contact">
         <div class="container-fluid no-padding">
-            <div class="row no-margin">
+            <div class="row no-margin contact-title-container">
                 <h3 class="contact-title">
                     聯絡我們
                 </h3>
