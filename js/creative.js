@@ -69,11 +69,10 @@
         $(".video-left a").removeClass("selected");
         $(this).addClass("selected");
     });
+    
     var portWidth = $('#portfolio').width();
-    if (portWidth < 768){
-        $('iframe').width(portWidth);
-        $('iframe').height(portWidth*720/1280);
-    }
+    $('.small-video').width(portWidth);
+    $('.small-video').height(Math.round(portWidth*720/1280));
 
     $('header').lazy({
         effect: 'fadeIn',
