@@ -1,3 +1,24 @@
+function resizeMediumVideo() {
+    var height = $('.video-left').height();
+    var width = $('.video-container').width();
+    var videos = $('.right-video');
+    $('.video-inner-container').css('width', width*2);
+    videos.css('height', height);
+    videos.css('width', width);
+
+    $('.video-left').on('click', 'a', function(){
+        $(".video-inner-container").css("transform","translateX("+$(this).index() * -width+"px)");
+        $(".video-left a").removeClass("selected");
+        $(this).addClass("selected");
+    });
+}
+
+function resizeSmallVideo() {
+    var portWidth = $('#portfolio').width();
+    $('.small-video').width(portWidth);
+    $('.small-video').height(Math.round(portWidth*720/1280));
+}
+
 (function($) {
     "use strict"; // Start of use strict
 
@@ -57,22 +78,17 @@
         }
     });
 
-    var height = $('.video-left').height();
-    var width = $('.video-container').width();
-    var videos = $('.right-video');
-    $('.video-inner-container').css('width', width*2);
-    videos.css('height', height);
-    videos.css('width', width);
+    resizeMediumVideo();
+    resizeSmallVideo();
 
-    $('.video-left').on('click', 'a', function(){
-        $(".video-inner-container").css("transform","translateX("+$(this).index() * -width+"px)");
-        $(".video-left a").removeClass("selected");
-        $(this).addClass("selected");
+    $( window ).resize(function() {
+        if ($(window).width() <= 767){
+            resizeSmallVideo();
+        }
+        else {
+            resizeMediumVideo();
+        }
     });
-    
-    var portWidth = $('#portfolio').width();
-    $('.small-video').width(portWidth);
-    $('.small-video').height(Math.round(portWidth*720/1280));
 
     $('header').lazy({
         effect: 'fadeIn',
@@ -97,3 +113,4 @@
     });
 
 })(jQuery); // End of use strict
+
