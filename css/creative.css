@@ -469,61 +469,61 @@ header .header-content .header-content-inner p {
   margin-left: 0px;
   margin-right: 0px;
 }
-.btn-default {
+.contact-btn {
   color: #FFF;
   background-color: #BD2B26;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
-.btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
+.contact-btn:hover,
+.contact-btn:focus,
+.contact-btn.focus,
+.contact-btn:active,
+.contact-btn.active,
+.open > .dropdown-toggle.contact-btn {
   color: #FFF;
   background-color: #FF7D3F;
 }
 
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
+.contact-btn:active,
+.contact-btn.active,
+.open > .dropdown-toggle.contact-btn {
   background-image: none;
 }
 
-.btn-default.active.focus,
-.btn-default.active:focus,
-.btn-default.active:hover,
-.btn-default:active.focus,
-.btn-default:active:focus,
-.btn-default:active:hover {
+.contact-btn.active.focus,
+.contact-btn.active:focus,
+.contact-btn.active:hover,
+.contact-btn:active.focus,
+.contact-btn:active:focus,
+.contact-btn:active:hover {
   background-color: #FF7D3F;
   color: #FFF;
 }
 
-.btn-default.disabled,
-.btn-default[disabled],
-fieldset[disabled] .btn-default,
-.btn-default.disabled:hover,
-.btn-default[disabled]:hover,
-fieldset[disabled] .btn-default:hover,
-.btn-default.disabled:focus,
-.btn-default[disabled]:focus,
-fieldset[disabled] .btn-default:focus,
-.btn-default.disabled.focus,
-.btn-default[disabled].focus,
-fieldset[disabled] .btn-default.focus,
-.btn-default.disabled:active,
-.btn-default[disabled]:active,
-fieldset[disabled] .btn-default:active,
-.btn-default.disabled.active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
+.contact-btn.disabled,
+.contact-btn[disabled],
+fieldset[disabled] .contact-btn,
+.contact-btn.disabled:hover,
+.contact-btn[disabled]:hover,
+fieldset[disabled] .contact-btn:hover,
+.contact-btn.disabled:focus,
+.contact-btn[disabled]:focus,
+fieldset[disabled] .contact-btn:focus,
+.contact-btn.disabled.focus,
+.contact-btn[disabled].focus,
+fieldset[disabled] .contact-btn.focus,
+.contact-btn.disabled:active,
+.contact-btn[disabled]:active,
+fieldset[disabled] .contact-btn:active,
+.contact-btn.disabled.active,
+.contact-btn[disabled].active,
+fieldset[disabled] .contact-btn.active {
   background-color: white;
   border-color: white;
 }
-.btn-default .badge {
+.contact-btn .badge {
   color: white;
   background-color: #222222;
 }
@@ -575,7 +575,7 @@ fieldset[disabled] .btn-primary.active {
   color: #BD2B26;
   background-color: white;
 }
-.btn {
+.contact-btn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
   border: none;
   border-radius: 0px;
@@ -740,7 +740,7 @@ body {
   .btn-xl {
     padding: 0px 10px 0px 0px;
   }
-  .btn-default:first-child {
+  .contact-btn:first-child {
     margin-bottom: 10px;
   }
   .md-video {
@@ -810,7 +810,7 @@ body {
     margin-bottom: 30px;
   }
 
-  .btn {
+  .contact-btn {
     font-size: 12px;
     letter-spacing: 0px;
     display: inline;
@@ -877,7 +877,7 @@ body {
   .btn-image{
     margin-right: 0px;
   }
-  .btn-default:first-child {
+  .contact-btn:first-child {
     margin-right: 20px;
   }
   .vertical-center2 {
@@ -894,4 +894,9 @@ body {
     margin-right: 50px;
   }
 
+}
+
+.nav>li>a {
+  padding-left: 10px;
+  padding-right: 10px;
 }
