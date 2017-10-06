@@ -3,6 +3,10 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+@font-face {
+    font-family: GenGyuu;
+    src: url(../font/GenJyuuGothic-Normal.ttf);
+}
 html,
 body {
   height: 100%;
@@ -10,7 +14,7 @@ body {
   background-color: #BD2B26;
 }
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, GenGyuu, Arial, sans-serif;
   padding: 0px 20px 0px 20px;
 }
 hr {
@@ -25,9 +29,13 @@ a {
   transition: all 0.35s;
   color: #BD2B26;
 }
+td > a:hover, td > a:focus {
+
+}
 a:hover,
 a:focus {
-  color: #eb3812;
+  color: #F37C46;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -35,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, GenGyuu, Arial, sans-serif;
 
 }
 p {
@@ -48,6 +56,14 @@ p {
 }
 .bg-white {
   background-color: #FFF;
+}
+.bg-secondary {
+  background-color: #6B0D0E;
+  color: white;
+}
+.bg-orange {
+  background-color: #F37C46;
+  color: black;
 }
 .bg-dark {
   background-color: #222222;
@@ -89,14 +105,14 @@ aside {
 .navbar-default {
   background-color: transparent;
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, GenGyuu, Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #BD2B26;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, GenGyuu, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -233,6 +249,7 @@ aside {
 header {
   position: relative;
   width: 100%;
+  display: flex;
   min-height: auto;
   color: white;
   background-image: url('../img/loader.svg');
@@ -255,8 +272,10 @@ header {
 }
 
 header .header-content {
+  align-items: stretch;
   position: relative;
   width: 100%;
+  min-height: 100%;
   padding: 10px 0px 0px 20px;
 }
 header .header-content .header-content-inner h1 {
@@ -308,7 +327,7 @@ header .header-content .header-content-inner p {
   background-position: 90% 70%;
   }*/
   .header-bg-loaded {
-    background-position: 90% 70%;
+    background-position: 90% 0%;
   }
 }
 
@@ -418,7 +437,7 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, GenGyuu, Arial, sans-serif;
   padding: 0 15px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -576,7 +595,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: white;
 }
 .contact-btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, GenGyuu, Arial, sans-serif;
   border: none;
   border-radius: 0px;
   font-size: 20px;
@@ -899,4 +918,141 @@ body {
 .nav>li>a {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+
+/* page 1 */
+
+.p1-header-div {
+  position: absolute;
+  top: 70%;
+  background: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+}
+
+.p1-small-header {
+  font-size: 2rem;
+  opacity: 1;
+  letter-spacing: 0.5rem;
+}
+
+.p1-large-header {
+  font-size: 3.5rem;
+  letter-spacing: 2rem;
+  color: #6B0D0E;
+}
+
+.p1-subheader1,
+.p1-subheader2 {
+  font-size: 2.4rem;
+  padding: 60px 0 60px 0;
+  text-align: center;
+}
+.p1-subheader1 {
+  margin-left: -20px;
+}
+.p1-subheader2 {
+  float: right;
+  margin-right: -20px;
+}
+.p1-section-header {
+  font-size: 2.5rem;
+  color: #000;
+  padding: 50px 0 50px 0;
+}
+.header-icon {
+  font-size: 3rem;
+}
+.p1-card {
+  background-color: rgba(189, 43, 38, 0.1);
+}
+.p1-card-header {
+  color: #6B0D0E;
+  font-size: 2.2rem;
+  padding-left: 40px;
+  border-bottom: 6px solid #BD2B26;
+  padding-bottom: 20px;
+}
+.question {
+  font-family: 'Amatic SC', cursive;
+  font-size: 5rem;
+  color: #AAAAAA;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 15px;
+}
+.wide-spacing {
+  letter-spacing: 5px;
+}
+.p1-card-content {
+  font-size: 1.7rem;
+  padding-left: 85px;
+  padding-top: 25px;
+  padding-right: 85px;
+}
+.p1-card-container .p1-image:nth-child(odd) {
+  padding-right: 30px;
+}
+.p1-card-container .p1-image:nth-child(even) {
+  padding-left: 30px;
+}
+.same-height-row{
+    overflow: hidden; 
+    margin-bottom: 30px;
+}
+.p1-card-container:last-child{
+    margin-bottom: 0px;
+}
+
+.same-height-col{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+.p1-table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 1.7rem;
+}
+.p1-header-table {
+  width: 60%;
+  position: absolute;
+  right: 0px;
+  font-size: 1.7rem;
+}
+.p1-table th, .p1-header-table th {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  border-bottom: 15px solid #FFF;
+  font-weight: normal;
+}
+.p1-table td, .p1-header-table td {
+  padding: 15px 0 15px 0;
+}
+.p1-table td {
+  background-color: #E3E3E3;
+}
+.p1-table td:first-child,
+.p1-table th:first-child {
+  border-right: 30px solid #FFF;
+}
+.p1-header-table tr:not(:last-child) {
+  border-bottom: 1px solid #979797;
+}
+.popup-container {
+  position: relative;
+  background: #F8E9E9;
+  width: auto;
+  max-width: 50%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.stress {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.margin{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }

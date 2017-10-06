@@ -78,6 +78,10 @@ function resizeSmallVideo() {
         }
     });
 
+    $('.p1-table').magnificPopup({
+        delegate: 'a'
+    });
+
     resizeMediumVideo();
     resizeSmallVideo();
 
