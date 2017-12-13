@@ -940,7 +940,7 @@ body {
 .p1-large-header {
   font-size: 3.5rem;
   letter-spacing: 2rem;
-  color: #6B0D0E;
+  color: #FFF;
 }
 
 .p1-subheader1,
@@ -1055,4 +1055,9 @@ body {
   margin-left: 20px;
   margin-bottom: 20px;
   margin-top: 10px;
+}
+@media (max-width: 1280px) {
+  .p1-header {
+    
+  }
 }
